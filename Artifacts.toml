@@ -1,0 +1,22 @@
+[[Faiss_CUDA]]
+arch = "x86_64"
+cuda = "11.8"
+git-tree-sha1 = "267d5bc9db8e22099c9c51a9b693162024570223"
+lazy = true
+libc = "glibc"
+os = "linux"
+
+    [[Faiss_CUDA.download]]
+    sha256 = "5685aa4f436e603ecabf978faad98d06219a9ab628eb7576ca8631e5f81ba4e7"
+    url = "https://github.com/JuliaBinaryWrappers/Faiss_CUDA_jll.jl/releases/download/Faiss_CUDA-v1.9.0+0/Faiss_CUDA.v1.9.0.x86_64-linux-gnu-cuda+11.8.tar.gz"
+[[Faiss_CUDA]]
+arch = "x86_64"
+cuda = "12.1"
+git-tree-sha1 = "b8b871940260ad50c63393aece36bbfdf95d320f"
+lazy = true
+libc = "glibc"
+os = "linux"
+
+    [[Faiss_CUDA.download]]
+    sha256 = "16b987de5b851e89e2f48fdcee70999288eac1b5464f651f962abeff50cbc0a3"
+    url = "https://github.com/JuliaBinaryWrappers/Faiss_CUDA_jll.jl/releases/download/Faiss_CUDA-v1.9.0+0/Faiss_CUDA.v1.9.0.x86_64-linux-gnu-cuda+12.1.tar.gz"
