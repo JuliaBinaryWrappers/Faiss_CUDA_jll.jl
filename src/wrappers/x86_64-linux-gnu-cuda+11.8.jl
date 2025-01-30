@@ -2,7 +2,7 @@
 export faiss_c_api_faiss_c_h, faiss_c_api_gpu_gpuindex_c_h, faiss_gpu_gpuindex_h, faiss_index_h, libfaiss, libfaiss_c
 
 using CompilerSupportLibraries_jll
-using MKL_jll
+using libblastrampoline_jll
 using CUDA_Runtime_jll
 JLLWrappers.@generate_wrapper_header("Faiss_CUDA")
 JLLWrappers.@declare_file_product(faiss_c_api_faiss_c_h)
@@ -12,7 +12,7 @@ JLLWrappers.@declare_file_product(faiss_index_h)
 JLLWrappers.@declare_library_product(libfaiss, "libfaiss.so")
 JLLWrappers.@declare_library_product(libfaiss_c, "libfaiss_c.so")
 function __init__()
-    JLLWrappers.@generate_init_header(CompilerSupportLibraries_jll, MKL_jll, CUDA_Runtime_jll)
+    JLLWrappers.@generate_init_header(CompilerSupportLibraries_jll, libblastrampoline_jll, CUDA_Runtime_jll)
     JLLWrappers.@init_file_product(
         faiss_c_api_faiss_c_h,
         "include/faiss/c_api/faiss_c.h",
